@@ -11,5 +11,5 @@ messages = [
     ("human", "explain why llms are stupid"),
 ]
 
-for chunk in llm.stream("Return the words Hello World!"):
+for chunk in llm.stream(messages):
     print(chunk.text(), end="")
